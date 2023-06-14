@@ -22,7 +22,7 @@ DC-Comics | Comic Create
 
             <div class="form-group mt-3">
                 <label for="input-title" class="form-label">Title:</label>
-                <input type="text" id="input-title" class="form-control" name="title" placeholder="Inserisci il titolo"> 
+                <input type="text" id="input-title" class="form-control" name="title" placeholder="Inserisci il titolo" autofocus> 
             </div>
 
             <div class="form-group mt-3">
