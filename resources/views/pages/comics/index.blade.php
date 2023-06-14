@@ -12,16 +12,16 @@ DC-Comics | Comics
             Current Series
         </span>
 
-        <div class="card-container row g-3 my-2">
+        <div class="card-container row my-2">
             
             @foreach( $comics as $elem )
     
-            <div class="comic-card col-sm-6 col-md-4 col-lg-2 d-flex flex-column align-items-center text-center">
+            <div class="comic-card col-6 col-md-4 col-lg-2 g-5 d-flex flex-column align-items-center justify-content-between text-center">
 
                 <img src=" {{ $elem['thumb'] }} " alt="Thumb">
                 
                 <div class="cardTitle">{{$elem['title']}}</div>
-                
+
             </div>
 
             @endforeach
