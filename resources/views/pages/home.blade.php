@@ -6,6 +6,8 @@ DC-Comics | Home
 
 @section( 'content-main' )
 
+    @include( 'partials.jumbo' )
+
     <div class="text-center p-5">
         <h1>Pagina Home</h1>
         <p>Still working on it. But try the

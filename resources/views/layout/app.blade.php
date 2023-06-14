@@ -15,8 +15,7 @@
 
     @include( 'partials.header' )
 
-    {{-- @include( 'partials.jumbo' ) --}}
-    <div class="jumbo-div"></div>
+    {{-- <div class="jumbo-div"></div> --}}
 
     <main>
         <!-- Contenuto che varia in base alla pagina -->

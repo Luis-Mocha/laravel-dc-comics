@@ -6,6 +6,8 @@ DC-Comics | Comics
 
 @section( 'content-main' )
 
+    @include( 'partials.jumbo' )
+
     <div id="comics-main" class="container">
 
         <span class="currentSeries">
