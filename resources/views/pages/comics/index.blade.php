@@ -14,7 +14,17 @@ DC-Comics | Comics
 
         <div class="card-container row g-3 my-2">
             
-            vanno stampati i comics prova
+            @foreach( $comics as $elem )
+    
+            <div class="comic-card col-sm-6 col-md-4 col-lg-2 d-flex flex-column align-items-center text-center">
+
+                <img src=" {{ $elem['thumb'] }} " alt="Thumb">
+                
+                <div class="cardTitle">{{$elem['title']}}</div>
+                
+            </div>
+
+            @endforeach
 
         </div>
 
