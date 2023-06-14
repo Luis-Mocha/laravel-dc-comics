@@ -13,6 +13,7 @@ DC-Comics | Home
         <p>Still working on it. But try the
             <a href="{{ route('comics.index') }}" class="text-primary text-decoration-underline">Comics Page</a>
         </p>
+        <div style="height: 150px"></div>
     </div>
     
 
