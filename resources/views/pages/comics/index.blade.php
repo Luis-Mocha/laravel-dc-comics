@@ -14,7 +14,7 @@ DC-Comics | Comics
 
         <div class="card-container row g-3 my-2">
             
-            vanno stampati i comics
+            vanno stampati i comics prova
 
         </div>
 
