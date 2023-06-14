@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+// Implemento il mio controller
+use App\Http\Controllers\ComicController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,3 +28,5 @@ Route::get('/comics', function () {
     return view('pages.comics', compact('comics'));
 
 })->name('comics');
+
+Route::resource('/comics', ComicController::class);
