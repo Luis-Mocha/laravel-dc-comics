@@ -21,12 +21,4 @@ Route::get('/', function () {
     return view('pages.home');
 })->name('home');
 
-Route::get('/comics', function () {
-
-    $comics = config( 'dbComics' );
-
-    return view('pages.comics', compact('comics'));
-
-})->name('comics');
-
 Route::resource('/comics', ComicController::class);
