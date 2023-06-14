@@ -14,18 +14,6 @@ DC-Comics | Comics
 
         <div class="card-container row g-3 my-2">
             
-            {{-- @foreach( $comics as $elem )
-    
-            <div class="comic-card col-sm-6 col-md-4 col-lg-2 d-flex flex-column align-items-center text-center">
-                <!-- <img src=" {{ $elem['thumb'] }} " alt="Thumb">  -->
-                <!-- il link pe la thumb non funziona-->
-
-                <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="logo">
-
-                <div class="cardTitle">{{$elem['title']}}</div>
-            </div>
-
-            @endforeach --}}
             vanno stampati i comics
 
         </div>
