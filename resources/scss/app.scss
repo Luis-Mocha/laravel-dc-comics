@@ -20,13 +20,20 @@ main {
     background-size: cover;
 }
 
+
+// comics.show
+.fa-reply {
+    &:hover {
+        color: $blue-dc;
+    }
+}
 .show-card {
     img {
         max-height: 400px;
     }
 
     .show-info {
-        
+
         .show-label {
             color: $blue-dc;
             margin-right: 4px;

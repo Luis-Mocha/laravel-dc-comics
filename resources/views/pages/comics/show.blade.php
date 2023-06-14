@@ -6,6 +6,12 @@ DC-Comics | Comic
 
 @section( 'content-main' )
 
+    <div class="text-light ms-4 pt-2 fs-4">
+        <a href="{{ route('comics.index') }}">
+            <i class="fa-solid fa-reply"></i>
+        </a>
+    </div>
+
     <div id="comics-main" class="container">
 
         <div class="show-card d-flex mb-4">
