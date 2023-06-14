@@ -1,0 +1,36 @@
+.socialComp {
+    background-color: rgb(48,48,48);
+
+    div {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .social-list {
+            color: $blue-dc;
+            font-weight: 700;
+            text-transform: uppercase;
+
+            a {
+                margin-left: 15px;
+                cursor: pointer;
+            }
+            
+        }
+    }
+}
+
+.signButton {
+   border: 3px solid $blue-dc; 
+   padding: 10px 20px;
+   background-color: transparent;
+
+   color: white;
+   font-weight: 600;
+   text-transform: uppercase;
+
+   &:hover {
+    background-color: $blue-dc;
+   }
+}

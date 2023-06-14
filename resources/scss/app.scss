@@ -1,1 +1,21 @@
 @import '~bootstrap/scss/bootstrap';
+
+@import 'partials/_variables.scss';
+@import 'partials/_reset.scss';
+@import 'partials/_general.scss';
+
+@import 'partials/_header.scss';
+
+@import 'partials/_mainComics.scss';
+
+@import 'partials/_footer.scss';
+
+main {
+    background-color: rgb(28,28,28);
+}
+
+.jumbo-div {
+    height: 350px;
+    background-image: url(../img/jumbotron.jpg);
+    background-size: cover;
+}
