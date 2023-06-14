@@ -8,7 +8,7 @@ DC-Comics | Comic
 
     <div id="comics-main" class="container">
 
-        <div class="show-card d-flex">
+        <div class="show-card d-flex mb-4">
 
             <img src=" {{ $comic['thumb'] }} " alt="Thumb">
 
