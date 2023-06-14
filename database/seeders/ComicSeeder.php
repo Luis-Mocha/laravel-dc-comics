@@ -17,6 +17,24 @@ class ComicSeeder extends Seeder
      */
     public function run()
     {
-        //
+        // Prendo i dati del file dbComics.php
+        $datiComics = config('dbComics');
+
+        foreach ($datiComics as $elem) {
+            
+            $newComic = new Comic();
+            $newComic->title = $elem['title'];
+            $newComic->description = $elem['description'];
+            $newComic->thumb = $elem['thumb'];
+            $newComic->price = $elem['price'];
+            $newComic->series = $elem['series'];
+            $newComic->sale_date = $elem['sale_date'];
+            $newComic->type = $elem['type'];
+
+            $newComic->save();
+
+
+        }
+
     }
 }
