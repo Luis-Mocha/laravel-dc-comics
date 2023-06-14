@@ -18,6 +18,8 @@ DC-Comics | Comic Create
 
         <form action=" {{ route('comics.store') }} " method="POST" class="row">
 
+            @csrf
+
             <div class="form-group mt-3">
                 <label for="input-title" class="form-label">Title:</label>
                 <input type="text" id="input-title" class="form-control" name="title" placeholder="Inserisci il titolo"> 
