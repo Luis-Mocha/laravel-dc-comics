@@ -23,7 +23,7 @@ DC-Comics | {{ $comic['title'] }}
                     {{ $comic['title'] }} 
                 </h1>
 
-                <p>
+                <p class="text-break">
                     {{ $comic['description'] }}
                 </p>
 
