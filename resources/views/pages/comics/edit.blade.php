@@ -10,10 +10,10 @@ DC-Comics | Comic Edit
 
         <h1 class="text-capitalize">Edit this Comic</h1>
 
-        <form action=" {{ route('comics.store') }} " method="POST" class="row" autocomplete="off">
+        <form action=" {{ route('comics.update') }} " method="POST" class="row" autocomplete="off">
 
             @csrf
-            
+
             {{-- Il form accetta solo get o post, quindi uso @method di laravel --}}
             @method('PUT')
 
