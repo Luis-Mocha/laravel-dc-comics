@@ -30,3 +30,12 @@
         }
     }
 }
+.fa-pen-to-square {
+    font-size: 16px;
+    transition: 0.5s;
+    &:hover {
+        color: $blue-dc;
+        font-size: 19px;
+        
+    }
+}
