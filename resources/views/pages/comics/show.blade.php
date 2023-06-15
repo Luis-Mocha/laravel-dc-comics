@@ -54,10 +54,22 @@ DC-Comics | {{ $comic['title'] }}
 
         </div>
 
-        <a href=" {{route( 'comics.edit', $comic )}} " data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Edit this Comic">
+        {{-- bottone EDIT --}}
+        <a href=" {{route( 'comics.edit', $comic )}} " data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Edit this Comic">
             <i class="fa-solid fa-pen-to-square"></i>
         </a>
 
+        {{-- bottone DESTROY --}}
+        {{-- no pagina di atterraggio: no link. Si usa un form --}}
+        <form action=" {{ route('comics.destroy', $comic) }} " method="POST" class="d-inline-block">
+
+            @csrf
+            @method('DELETE')
+
+            <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Delete this Comic">
+                <i class="fa-solid fa-trash-can"></i>
+            </button>
+        </form>
         
     </div>
 
