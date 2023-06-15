@@ -20,5 +20,10 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+
+        // Utilizzo il mio file esterno. Uso la funzione call che chiama un array di seeder personali
+        $this->call([
+            ComicSeeder::class,
+        ]);
     }
 }
