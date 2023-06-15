@@ -38,7 +38,7 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        // funzione per salavare i nuovi dati nel database
+        // funzione per salvare i nuovi dati nel database
         $form_data = $request ->all();
         // dd($form_data);
 
@@ -83,7 +83,7 @@ class ComicController extends Controller
      */
     public function edit(Comic $comic)
     {
-        //
+        return view( 'pages.comics.edit', compact ('comic'));
     }
 
     /**
