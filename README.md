@@ -10,3 +10,9 @@ Inizio a definire le prime operazioni CRUD con le relative view:
 - show()
 - create()
 - store()
+
+---
+
+Definisco anche le operazioni CRUD:
+- update()
+- destroy()
