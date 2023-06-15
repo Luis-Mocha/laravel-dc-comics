@@ -48,7 +48,7 @@ DC-Comics | {{ $comic['title'] }}
 
                 <div class="mt-3 text-end mt-auto py-3">
                     <span class="show-label fs-5">Price:</span>
-                    <span class="text-capitalize fs-3">{{ $comic['price'] }}</span>
+                    <span class="text-capitalize fs-3">{{ $comic['price'] }} $</span>
                 </div>
             </div>
 
