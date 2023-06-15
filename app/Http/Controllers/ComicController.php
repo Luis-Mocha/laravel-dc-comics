@@ -95,7 +95,15 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
-        //
+        
+        // funzione per salvare i dati modificati nel database
+        $form_data = $request ->all();
+
+        $comic->update( $form_data );
+
+        //ritorno ad un'altra pagina
+        return redirect()->route('comics.show', [ 'comic' => $comic->id ]);
+
     }
 
     /**
