@@ -10,7 +10,7 @@ DC-Comics | Comic Edit
 
         <h1 class="text-capitalize">Edit this Comic</h1>
 
-        <form action=" {{ route('comics.update') }} " method="POST" class="row" autocomplete="off">
+        <form action=" {{ route('comics.update', $comic ) }} " method="POST" class="row" autocomplete="off">
 
             @csrf
 
@@ -49,7 +49,7 @@ DC-Comics | Comic Edit
 
             <div class="form-grp mt-3 col-6">
                 <label for="input-price" class="form-label">Price:</label>
-                <input type="number" name="price" id="input-price" class="form-control" placeholder="Inserisci il prezzo" min="0" max="100" required value="{{ old('price') ?? $comic->price }}">
+                <input type="number" name="price" id="input-price" class="form-control" placeholder="Inserisci il prezzo" step="0.01" min="0" max="100" required value="{{ old('price') ?? $comic->price }}">
             </div>            
 
             <button type="submit" class="btn btn-primary my-4 col-2 mx-auto">Edit Comic !</button>
