@@ -54,6 +54,10 @@ DC-Comics | {{ $comic['title'] }}
 
         </div>
 
+        <a href=" {{route( 'comics.edit', $comic )}} " data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Edit this Comic">
+            <i class="fa-solid fa-pen-to-square"></i>
+        </a>
+
         
     </div>
 
