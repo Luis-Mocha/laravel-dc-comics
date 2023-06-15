@@ -13,6 +13,9 @@ DC-Comics | Comic Edit
         <form action=" {{ route('comics.store') }} " method="POST" class="row" autocomplete="off">
 
             @csrf
+            
+            {{-- Il form accetta solo get o post, quindi uso @method di laravel --}}
+            @method('PUT')
 
             <div class="form-group mt-3">
                 <label for="input-title" class="form-label">Title:</label>
