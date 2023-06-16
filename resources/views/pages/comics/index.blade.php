@@ -34,9 +34,17 @@ DC-Comics | Comics
 
         </div>
 
-        <button class="load-button mx-auto d-block text-uppercase px-4 py-2 fw-bold mt-5">
-            Load More
-        </button>
+        <div class="d-flex mt-5 justify-content-center">
+            <button class="load-button d-block text-uppercase px-4 py-2 fw-bold mx-2">
+                Load More
+            </button>
+            <a href="{{ route('comics.create') }}">
+                <button class="load-button d-block text-uppercase px-4 py-2 fw-bold mx-2">
+                    Create Comic
+                </button>
+            </a>
+            
+        </div>
         
     </div>
 
