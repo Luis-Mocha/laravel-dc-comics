@@ -1,8 +1,8 @@
 <header class="container">
 
-    <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="Logo header">
-
     <nav>
+
+        <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="Logo header">
 
         <ul>
             <li>
@@ -37,13 +37,13 @@
             </li>
         </ul>
 
-    </nav>
+        <div id="header-input" class="input-group">
+            <input id="search-input" type="text" placeholder="Search" class="form-control" autocomplete="off">
+            <span for="search-input" class="input-group-text">
+                <i class="fa-solid fa-magnifying-glass text-black"></i>
+            </span>
+        </div>
 
-    <div id="header-input" class="input-group">
-        <input id="search-input" type="text" placeholder="Search" class="form-control" autocomplete="off">
-        <span for="search-input" class="input-group-text">
-            <i class="fa-solid fa-magnifying-glass text-black"></i>
-        </span>
-    </div>
+    </nav>
 
 </header>
