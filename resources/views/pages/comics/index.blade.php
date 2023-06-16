@@ -20,7 +20,7 @@ DC-Comics | Comics
     
             <div class="comic-card col-6 col-md-4 col-lg-2 g-5 d-flex flex-column align-items-center justify-content-between text-center">
 
-                <a href="{{ route('comics.show' , [ 'comic' => $elem->id ] ) }}">
+                <a href="{{ route('comics.show' , [ 'comic' => $elem ] ) }}">
 
                     <img src=" {{ $elem['thumb'] }} " alt="Thumb">
 
