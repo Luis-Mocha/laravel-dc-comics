@@ -35,8 +35,17 @@
     font-size: 16px;
     transition: 0.5s;
     &:hover {
-        color: $blue-dc;
         font-size: 19px;
         
+    }
+}
+.fa-pen-to-square {
+    &:hover {
+        color: yellow;        
+    }
+}
+.fa-trash-can {
+    &:hover {
+        color: red;       
     }
 }
