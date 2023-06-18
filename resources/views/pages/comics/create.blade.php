@@ -16,7 +16,7 @@ DC-Comics | Comic Create
 
             <div class="form-group mt-3">
                 <label for="input-title" class="form-label">Title:</label>
-                <input type="text" id="input-title" class="form-control @error('title') is-invalid @enderror" name="title" placeholder="Inserisci il titolo" autofocus> 
+                <input type="text" id="input-title" class="form-control @error('title') is-invalid @enderror" name="title" placeholder="Inserisci il titolo" autofocus value="{{ old('title') }}"> 
             </div>
             {{-- erorre validazione --}}
             @error('title')
@@ -30,7 +30,7 @@ DC-Comics | Comic Create
 
             <div class="form-group mt-3">
                 <label for="input-thumb" class="form-label">Thumb:</label>
-                <input type="text" id="input-thumb" class="form-control @error('thumb') is-invalid @enderror" name="thumb" placeholder="Inserisci il link alla copertina"> 
+                <input type="text" id="input-thumb" class="form-control @error('thumb') is-invalid @enderror" name="thumb" placeholder="Inserisci il link alla copertina" value="{{ old('thumb') }}"> 
             </div>
             {{-- erorre validazione --}}
             @error('thumb')
@@ -39,7 +39,7 @@ DC-Comics | Comic Create
 
             <div class="form-group mt-3 col-6">
                 <label for="input-type" class="form-label">Type:</label>
-                <input type="text" id="input-type" class="form-control @error('type') is-invalid @enderror" name="type" placeholder="Inserisci la tipologia"> 
+                <input type="text" id="input-type" class="form-control @error('type') is-invalid @enderror" name="type" placeholder="Inserisci la tipologia" value="{{ old('type') }}"> 
             </div>
             {{-- erorre validazione --}}
             @error('type')
@@ -48,7 +48,7 @@ DC-Comics | Comic Create
 
             <div class="form-group mt-3 col-6">
                 <label for="input-series" class="form-label">Series:</label>
-                <input type="text" id="input-series" class="form-control @error('series') is-invalid @enderror" name="series" placeholder="Inserisci la serie di appartenenza"> 
+                <input type="text" id="input-series" class="form-control @error('series') is-invalid @enderror" name="series" placeholder="Inserisci la serie di appartenenza" value="{{ old('series') }}"> 
             </div>
             {{-- erorre validazione --}}
             @error('series')
@@ -57,7 +57,7 @@ DC-Comics | Comic Create
 
             <div class="form-group mt-3 col-6">
                 <label for="input-sale_date" class="form-label">Sale Date:</label>
-                <input type="date" id="input-sale_date" class="form-control @error('sale_date') is-invalid @enderror" name="sale_date"> 
+                <input type="date" id="input-sale_date" class="form-control @error('sale_date') is-invalid @enderror" name="sale_date" value="{{ old('sale_date') }}"> 
             </div>
             {{-- erorre validazione --}}
             @error('sale_date')
@@ -66,7 +66,7 @@ DC-Comics | Comic Create
 
             <div class="form-grp mt-3 col-6">
                 <label for="input-price" class="form-label">Price:</label>
-                <input type="number" name="price" id="input-price" class="form-control @error('price') is-invalid @enderror" placeholder="Inserisci il prezzo" min="0" max="1000" step="0.01">
+                <input type="number" name="price" id="input-price" class="form-control @error('price') is-invalid @enderror" placeholder="Inserisci il prezzo" min="0" max="1000" step="0.01" value="{{ old('price') }}">
             </div>
             {{-- erorre validazione --}}
             @error('price')
