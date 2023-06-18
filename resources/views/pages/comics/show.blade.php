@@ -66,11 +66,23 @@ DC-Comics | {{ $comic['title'] }}
             @csrf
             @method('DELETE')
 
-            <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Delete this Comic">
+            <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Delete this Comic" onclick=" return stopDelete(' {{ $comic['title'] }} ')">
                 <i class="fa-solid fa-trash-can"></i>
             </button>
         </form>
         
     </div>
+
+@endsection
+
+@section('script-custom')
+
+<script>
+    // console.log(' {{ $comic['title'] }} ');
+
+    function stopDelete(par) {
+        return confirm(`The deletion will be permanent. Do you confirm you want to delete ${par}?`)
+    };
+</script>
 
 @endsection
