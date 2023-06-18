@@ -80,7 +80,7 @@ class ComicController extends Controller
         $newComic->save();
 
         //ritorno ad un'altra pagina
-        return redirect()->route('comics.index');
+        return redirect()->route('comics.index')->with('success', 'Congratulazioni, hai aggiunto il tuo fumetto!');
 
     }
 

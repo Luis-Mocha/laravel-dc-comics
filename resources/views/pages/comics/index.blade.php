@@ -15,6 +15,14 @@ DC-Comics | Comics
         </span>
 
         <div class="card-container row my-2">
+
+            {{-- messaggio in caso di successo creazione fumetto --}}
+            @if (Session::has('success') )
+                <div class="alert bg-primary text-center text-light">
+                    {!! Session::get('success') !!}
+                </div>
+            @endif
+
             
             @foreach( $comics as $elem )
     
