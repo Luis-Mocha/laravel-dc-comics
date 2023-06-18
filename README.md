@@ -16,3 +16,9 @@ Inizio a definire le prime operazioni CRUD con le relative view:
 Definisco anche le operazioni CRUD:
 - update()
 - destroy()
+
+---
+
+Aggiungo validazioni ai form di "creazione" e "update", in modo da rendere più stabile il gestionale di fumetti.
+Valido gli input ricevuti rispondendo con errori chiari e in italiano.
+Aggiungo un messaggio in caso di successo della funzione "create" nel *redirect*.
