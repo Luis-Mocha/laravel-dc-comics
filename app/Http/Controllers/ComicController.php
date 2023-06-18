@@ -119,6 +119,29 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
+
+        // validazione
+        $request->validate(
+            [
+                'title'=> 'required',
+                'thumb'=> 'required|url',
+                'price'=> 'required|numeric',
+                'series'=> 'required',
+                'sale_date'=> 'required',
+                'type'=> 'required',
+            ],
+            [
+                'title.unique'=> 'Questo titolo è già utilizzato',
+                'title.required'=> 'Il campo "titolo" è richiesto',
+                'thumb.required'=> 'Il campo "copertina" è richiesto',
+                'thumb.url'=> 'Il campo "copertina" deve contenere un URL valido',
+                'price'=> 'Il campo "prezzo" è richiesto',
+                'price.numeric'=> 'Il campo "prezzo" può contenere solo numeri',
+                'series'=> 'Il campo "serie" è richiesto',
+                'sale_date'=> 'Il campo "data di uscita" è richiesto',
+                'type'=> 'Il campo "tipo" è richiesto',
+            ]
+        );
         
         // funzione per salvare i dati modificati nel database
         $form_data = $request ->all();
