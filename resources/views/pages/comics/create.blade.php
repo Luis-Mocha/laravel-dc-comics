@@ -73,8 +73,10 @@ DC-Comics | Comic Create
                 <div class="alert alert-warning p-1 ">{{ $message }}</div>
             @enderror
 
-
-            <button type="submit" class="btn btn-primary my-4 col-2 mx-auto">Add Comic !</button>
+            <div class="w-100">
+                <button type="submit" class="btn btn-primary my-4 col-2 mx-auto d-block ">Add Comic !</button>
+            </div>
+            
 
         </form>
         
