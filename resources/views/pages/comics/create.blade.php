@@ -27,8 +27,7 @@ DC-Comics | Comic Create
 
             <div class="form-group mt-3">
                 <label for="input-description" class="form-label">Description:</label>
-                <textarea id="input-description" class="form-control" name="description" cols="30" rows="5">
-                </textarea>
+                <textarea id="input-description" class="form-control" name="description" cols="30" rows="5"></textarea>
             </div>
 
             <div class="form-group mt-3">
