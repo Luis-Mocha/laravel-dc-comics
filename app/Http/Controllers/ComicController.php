@@ -43,7 +43,7 @@ class ComicController extends Controller
         $request->validate(
             [
                 'title'=> 'unique:comics|required',
-                'thumb'=> 'required',
+                'thumb'=> 'required|url',
                 'price'=> 'required|numeric',
                 'series'=> 'required',
                 'sale_date'=> 'required',
@@ -52,7 +52,8 @@ class ComicController extends Controller
             [
                 'title.unique'=> 'Questo titolo è già utilizzato',
                 'title.required'=> 'Il campo "titolo" è richiesto',
-                'thumb'=> 'Il campo "copertina" è richiesto',
+                'thumb.required'=> 'Il campo "copertina" è richiesto',
+                'thumb.url'=> 'Il campo "copertina" deve contenere un URL valido',
                 'price'=> 'Il campo "prezzo" è richiesto',
                 'price.numeric'=> 'Il campo "prezzo" può contenere solo numeri',
                 'series'=> 'Il campo "serie" è richiesto',
